@@ -1,0 +1,15 @@
+﻿<Window x:Class="MarafonSkills.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MarafonSkills"
+        mc:Ignorable="d"
+        Title="Marathon Skills 2017" Style="{DynamicResource base_window}" Loaded="Window_Loaded" Width="795" Height="447">
+    <Grid>
+        <Rectangle Fill="{DynamicResource dark_grey}" HorizontalAlignment="Center" Height="83" Margin="0,351,0,0" VerticalAlignment="Top" Width="800" Stretch="UniformToFill"/>
+        <Label x:Name="label_timer" Foreground="white" Content="{Binding Time, UpdateSourceTrigger=PropertyChanged, Mode=Oneway}" HorizontalAlignment="Center" Margin="0,369,0,0" VerticalAlignment="Top"/>
+        <Frame Content="Frame" Height="377" VerticalAlignment="Top" HorizontalAlignment="Left" Width="795" Source="/MainPage.xaml" NavigationUIVisibility="Hidden"/>
+
+    </Grid>
+</Window>
